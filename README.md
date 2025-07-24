@@ -15,6 +15,7 @@ A PyTorch-based sequence-to-sequence Transformer model for text translation, wit
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Project Structure](#project-structure)
 - [Screenshots / Demo](#screenshots--demo)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
@@ -36,8 +37,46 @@ A PyTorch-based sequence-to-sequence Transformer model for text translation, wit
 - Customizable Transformer architecture (layers, heads, etc.)
 - Data preprocessing utilities for parallel corpora
 - Training and evaluation scripts
-- Tokenization using pretrained BERT for ancient Chinese
+- Tokenization using pretrained BERT for ancient Chinese ([Jihuai/bert-ancient-chinese](https://huggingface.co/Jihuai/bert-ancient-chinese))
 - Modular and extensible codebase
+
+---
+
+## Project Structure
+
+```
+transformer-translation/
+├── configs/           # Configuration files for experiments
+├── checkpoints/       # Saved model checkpoints
+├── data/              # Data files (raw, processed, train/val/test splits)
+├── logs/              # Training and evaluation logs
+├── model/             # Model architecture (Transformer, attention, etc.)
+├── scripts/           # Training, evaluation, and config scripts
+├── utils/             # Utilities: dataloader, tokenizer, helpers
+├── requirements.txt   # Python dependencies
+├── README.md          # Project documentation
+└── .gitignore         # Git ignore rules
+```
+
+- **configs/**: Store experiment and model configuration files.
+- **checkpoints/**: Contains saved model weights after training.
+- **data/**: Place your dataset files here. Preprocessing scripts will generate train/val/test splits in this folder.
+- **logs/**: Output logs from training and evaluation runs.
+- **model/**: All model-related code, including the Transformer architecture and attention mechanisms.
+- **scripts/**: Main scripts for training (`train.py`), evaluation (`evaluate.py`), and configuration (`train_config.py`).
+- **utils/**: Helper modules for data loading, tokenization, and preprocessing.
+- **requirements.txt**: List of required Python packages.
+- **README.md**: This documentation file.
+- **.gitignore**: Specifies files and directories to be ignored by git.
+
+---
+
+## Data and Tokenizer Sources
+
+- **Dataset**: The dataset comes from [ClassicalModernCorpus](https://github.com/Hellohistory/ClassicalModernCorpus), a cleaned and curated collection of 文白对照语料, originally sourced from:
+  - [BangBOOM/Classical-Chinese](https://github.com/BangBOOM/Classical-Chinese)
+  - [NiuTrans/Classical-Modern](https://github.com/NiuTrans/Classical-Modern)
+- **Tokenizer**: [Jihuai/bert-ancient-chinese](https://huggingface.co/Jihuai/bert-ancient-chinese) — a BERT model pretrained for ancient Chinese, with an expanded vocabulary and domain-adaptive pretraining. For more details, see the [model card and documentation](https://huggingface.co/Jihuai/bert-ancient-chinese).
 
 ---
 
