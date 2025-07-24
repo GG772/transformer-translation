@@ -100,7 +100,7 @@ transformer-translation/
 ### Installation
 
 ```bash
-git clone https://github.com/yourusername/transformer-translation.git
+git clone https://github.com/GG772/transformer-translation.git
 cd transformer-translation
 pip install -r requirements.txt
 ```
@@ -183,7 +183,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-Maintainer: [Your Name or GitHub handle]  
-Email: [your.email@example.com]
+Maintainer: [George]  
+Email: [whgeorgewu5@gmail.com]
 
 ---
