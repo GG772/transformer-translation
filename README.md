@@ -111,7 +111,7 @@ pip install -r requirements.txt
 
 ### Data Preparation
 
-1. Place your parallel data (JSON format) in the `data/` directory.
+1. Unzip data in the `data/` directory.
 2. Use the helper script to preprocess data:
    ```bash
    python utils/helpers.py
