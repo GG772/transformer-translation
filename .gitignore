@@ -71,5 +71,5 @@ env.bak/
 venv.bak/
 
 
-data/
+data/*.txt
 checkpoints/

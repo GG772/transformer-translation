@@ -1,5 +1,5 @@
 config = {
-    "epoch": 5,
+    "epoch": 6,
     "learning_rate": 1e-4,
     "batch_size": 16,
     "shuffle": True,
