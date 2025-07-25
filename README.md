@@ -60,7 +60,7 @@ transformer-translation/
 
 - **configs/**: Store experiment and model configuration files.
 - **checkpoints/**: Contains saved model weights after training.
-- **data/**: Place your dataset files here. Preprocessing scripts will generate train/val/test splits in this folder.
+- **data/**: Contain dataset files. Preprocessing scripts will generate train/val/test splits in this folder.
 - **logs/**: Output logs from training and evaluation runs.
 - **model/**: All model-related code, including the Transformer architecture and attention mechanisms.
 - **scripts/**: Main scripts for training (`train.py`), evaluation (`evaluate.py`), and configuration (`train_config.py`).
